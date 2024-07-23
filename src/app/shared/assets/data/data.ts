@@ -1,4 +1,4 @@
-var home = [
+export const home = [
     {
         "libelle": "Les mangas",
         "illustration": {
@@ -20,7 +20,7 @@ var home = [
 ];
 
 
-var mangas = [
+export const mangas = [
     {
         // src : wikipedia
         "emplacement_img": "/mangas/dragon_ball/",
@@ -76,7 +76,7 @@ var mangas = [
 ];
 
 
-var photo = {
+export const photo = {
     "emplacement_img": "/photos/",
     "cliches": [
         {

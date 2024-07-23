@@ -1,1 +1,18 @@
-<h1>TEST2</h1>
+
+<body>
+    <section>
+    <section *ngFor="let manga of mangas">
+        <h2>{{manga.titre}}</h2>
+        <p>Nb volumes: {{manga.nb_volumes}} <i>({{manga.etat_publication}})</i></p>
+        <img src="{{manga.emplacement_img}}{{manga.illustration}}" alt="">
+        <h3>Résumé :</h3>
+        <p class="resume">{{manga.resume}}</p>
+        <h3>Personnages principaux :</h3>
+            <div>
+                <section *ngFor="let personnage of manga.personnages_principaux">
+                    <h4>{{personnage.nom}}</h4>
+                    <img src="{{manga.emplacement_img}}{{personnage.image}}" alt="">
+                    <p class="resume">{{personnage.descriptif}}</p>
+                </section>
+            </div>
+    </section>
