@@ -1,1 +1,10 @@
-<h1>TEST3</h1>
+<body>
+    <div *ngFor="let photo of photos">
+        <section *ngFor="let p of photo">
+            <h2>{{ p.titre }}</h2>
+            <p>{{ p.date }}</p>
+            <img src='/photos/{{p.fichier}}' alt="photo" />
+            <p class="resume">{{ p.description }}</p>
+        </section>
+    </div>
+</body>
